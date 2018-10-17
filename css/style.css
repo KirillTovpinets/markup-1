@@ -1,0 +1,213 @@
+@font-face{
+    src: url('../fonts/Myriad Pro Bold.otf');
+    font-family: 'Myriad Pro Bold';
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    color:#fff;
+}
+a:hover{
+    color:#fff;
+}
+.content-block,
+.tab-pane{
+    padding: 100px 0px;
+}
+.section-title{
+    font-weight: bold;
+    font-size:24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-description{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    font-size: 16px;
+}
+.full-height-header{
+    height: 100vh;
+    position: relative;
+    background:url('../img/headerbg.jpg');
+    background-attachment: fixed;
+    z-index: 0;
+}
+.full-height-header .container{
+    height: 100%;
+    z-index: 2;
+}
+.full-height-header:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.navbar{
+    padding: 0;
+    border-bottom: 1px solid #29292b;
+}
+.nav-link{
+    padding: 30px 0px;
+    color:#fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.nav-link:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-item{
+    margin-right:30px;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+.header-title{
+    margin-top: 300px;
+}
+.header-text{
+    font-family: 'Myriad Pro Bold';
+    font-size:72px;
+    font-weight: bold;
+}
+.header-slogan{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.header-text,
+.header-slogan{
+    color:#fff;
+    text-align: center;
+}
+
+.nav-tabs .nav-item{
+    margin: 0;
+    border:none;
+    position: relative;
+}
+.nav-tabs .nav-link{
+    background-color: #21424a;
+    border:none;
+    padding: 65px 0px;
+    font-size:22px;
+    font-weight:bold;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+svg{
+    position: absolute;
+    top: 0;
+    right: -30px;
+    z-index: 1;
+}
+svg.triangle-on{
+    display:none;
+}
+.nav-tabs .nav-link:hover ~ svg.triangle-on,
+.nav-tabs .nav-link:active ~ svg.triangle-on,
+.nav-tabs .nav-link:focus ~ svg.triangle-on{
+    display: block;
+}
+.nav-tabs .nav-link:hover ~ svg.triangle-off,
+.nav-tabs .nav-link:active ~ svg.triangle-off,
+.nav-tabs .nav-link:focus ~ svg.triangle-off{
+    display:none;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:active,
+.nav-tabs .nav-link:focus{
+    background-color: #2fac6c;
+    border-radius: 0px;
+    color:#fff;
+}
+
+.form-inline{
+    border: 1px solid #d9d9d9;
+    color:#cecece;
+    margin-bottom: 40px;
+}
+.form-inline [class^="col"]{
+    padding: 0;
+}
+.form-inline [class^="col-"] .form-control{
+    width: 100%;
+    border:none;
+    background-color: none;
+}
+.form-inline [class^="col-"] .form-control:focus,
+.form-inline [class^="col-"] .form-control:active{
+    outline: none;
+    border:none;
+    box-shadow: none;
+}
+.form-inline .w3-span{
+    padding: 0 15px;
+    border-right:1px solid #d9d9d9;
+}
+
+.form-inline .domain{
+    border-left:1px solid #d9d9d9;
+}
+
+.domain select{
+    background: none;
+    border:none;
+    padding:0px 15px;
+    color:#cecece;
+}
+
+[class *='-price']{
+    /* border: 1px solid #cecece; */
+}
+
+.wrapper{
+    max-width: 81%;
+    margin: 0 auto;
+}
+.price-list{
+    padding: 26px;
+    border: 1px solid #cecece;
+}
+.price-list .info-item{
+    text-align: center;
+    padding: 6px;
+    position: relative;
+}
+
+.price-list .info-item:before{
+    content:'';
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    left:1px;
+    top: 0;
+    border-bottom:1px solid #cecece;
+}
+.price-list .net-price .info-item:before{
+    border:none;
+}
+.price-list .info-item .inner-container{
+    padding: 23px;
+    border-right:1px solid #cecece;
+    position: relative;
+    color:#cbcbcb;
+    font-size:14px;
+}
+.price-list .info-item:last-child .inner-container{
+    border:none;
+}
+
+section.packages{
+    background: url('../img//sectionbg1.jpg');
+    background-size: cover;
+    background-position: center;
+}
