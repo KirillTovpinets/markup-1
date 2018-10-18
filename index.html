@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato+Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:regular|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -140,13 +145,153 @@
                 </div>
             </section>
             <section class="content-block packages">
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 basic-package">
+                            <div class="package-item">
+                                <div class="slider mx-auto" id="basic-package">
+                                    <i class="fa fa-anchor"></i>
+                                </div>
+                                <div class="title"><h6>BASIC PACKAGE</h6></div>
+                                <hr>
+                                <div class="description">
+                                    <div class="d-flex justify-content-between"><span>Disk Space (GB)</span><span>50</span></div>
+                                    <div class="d-flex justify-content-between"><span>Subdomains</span><span>50</span></div>
+                                    <div class="d-flex justify-content-between"><span>Transfer (GB)</span><span>50</span></div>
+                                    <div class="d-flex justify-content-between"><span>Data bases</span><span>1</span></div>
+                                    <div class="d-flex justify-content-between"><span>Dashboards</span><span>1</span></div>
+                                    <div class="d-flex justify-content-between"><span>Control Panel & FTP</span><span></span></div>
+                                    <div class="d-flex justify-content-between"><span>Free Support</span><span></span></div>
+                                    <hr>
+                                </div>
+                                <div class="price-section">
+                                    <div class="price"><sup>$</sup>15<sub>/Mo</sub></div>
+                                    <hr class="divider">
+                                    <button>SELECT PLAN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 normal-package">
+                            <div class="package-item">
+                                <div class="slider mx-auto" id="normal-package">
+                                    <i class="fa fa-star-half-empty"></i>
+                                </div>
+                                <div class="title"><h6>NORMAL PACKAGE</h6></div>
+                                <hr>
+                                <div class="description">
+                                    <div class="d-flex justify-content-between"><span>Disk Space (GB)</span><span>100</span></div>
+                                    <div class="d-flex justify-content-between"><span>Subdomains</span><span>100</span></div>
+                                    <div class="d-flex justify-content-between"><span>Transfer (GB)</span><span>100</span></div>
+                                    <div class="d-flex justify-content-between"><span>Data bases</span><span>2</span></div>
+                                    <div class="d-flex justify-content-between"><span>Dashboards</span><span>2</span></div>
+                                    <div class="d-flex justify-content-between"><span>Control Panel & FTP</span><span></span></div>
+                                    <div class="d-flex justify-content-between"><span>Free Support</span><span></span></div>
+                                    <hr>
+                                </div>
+                                <div class="price-section">
+                                    <div class="price"><sup>$</sup>30<sub>/Mo</sub></div>
+                                    <hr class="divider">
+                                    <button>SELECT PLAN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 big-package">
+                            <div class="package-item">
+                                <div class="slider mx-auto" id="big-package">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="title"><h6>BIG PACKAGE</h6></div>
+                                <hr>
+                                <div class="description">
+                                    <div class="d-flex justify-content-between"><span>Disk Space (GB)</span><span>150</span></div>
+                                    <div class="d-flex justify-content-between"><span>Subdomains</span><span>150</span></div>
+                                    <div class="d-flex justify-content-between"><span>Transfer (GB)</span><span>150</span></div>
+                                    <div class="d-flex justify-content-between"><span>Data bases</span><span>4</span></div>
+                                    <div class="d-flex justify-content-between"><span>Dashboards</span><span>4</span></div>
+                                    <div class="d-flex justify-content-between"><span>Control Panel & FTP</span><span></span></div>
+                                    <div class="d-flex justify-content-between"><span>Free Support</span><span></span></div>
+                                    <hr>
+                                </div>
+                                <div class="price-section">
+                                    <div class="price"><sup>$</sup>40<sub>/Mo</sub></div>
+                                    <hr class="divider">
+                                    <button>SELECT PLAN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 biggest-package">
+                            <div class="package-item">
+                                <div class="slider mx-auto" id="biggest-package">
+                                    <i class="fa fa-diamond"></i>
+                                </div>
+                                <div class="title"><h6>BIGGEST PACKAGE</h6></div>
+                                <hr>
+                                <div class="description">
+                                    <div class="d-flex justify-content-between"><span>Disk Space (GB)</span><span>250</span></div>
+                                    <div class="d-flex justify-content-between"><span>Subdomains</span><span>250</span></div>
+                                    <div class="d-flex justify-content-between"><span>Transfer (GB)</span><span>250</span></div>
+                                    <div class="d-flex justify-content-between"><span>Data bases</span><span>6</span></div>
+                                    <div class="d-flex justify-content-between"><span>Dashboards</span><span>6</span></div>
+                                    <div class="d-flex justify-content-between"><span>Control Panel & FTP</span><span></span></div>
+                                    <div class="d-flex justify-content-between"><span>Free Support</span><span></span></div>
+                                    <hr>
+                                </div>
+                                <div class="price-section">
+                                    <div class="price"><sup>$</sup>70<sub>/Mo</sub></div>
+                                    <hr class="divider">
+                                    <button>SELECT PLAN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-block about-us">
+                <div class="container">
+                    <div class="d-flex">
+                        <div class="about-text">
+                            <div class="h2">About Us</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Praesent feugiat eget diam sit amet molestie.Curabitur. 
+                                ut ipsum bibendum tortor lacinia fermentum nec joeıa.
+                                Mauris at augue libero. Fusce posuere, sapien nec poır.
+                                Uaee augsuada sed mauris in tincidunt...</p>
+                        </div>
+                        <div class="about-team d-flex">
+                            <div class="team-item">
+                                <div class="avatar avatar-1"></div>
+                                <span class="name">Jonny Doe</span>
+                                <span class="status">Designer</span>
+                                <div class="social">
+                                    <a href="#"><i class="fa fa-fb"></i><a href="#"><i class="fa-fa-twitter"></i><a href="#"><i class="fa fa-chain"></i></a></a></a>
+                                </div>
+                            </div>
+                            <div class="team-item">
+                                <div class="avatar avatar-2"></div>
+                                <span class="name">Jon Doe</span>
+                                <span class="status">Designer</span>
+                                <div class="social">
+                                    <a href="#"><i class="fa fa-fb"></i><a href="#"><i class="fa-fa-twitter"></i><a href="#"><i class="fa fa-chain"></i></a></a></a>
+                                </div>
+                            </div>
+                            <div class="team-item">
+                                <div class="avatar avatar-3"></div>
+                                <span class="name">Johnathan Doe</span>
+                                <span class="status">Designer</span>
+                                <div class="social">
+                                    <a href="#"><i class="fa fa-fb"></i><a href="#"><i class="fa-fa-twitter"></i><a href="#"><i class="fa fa-chain"></i></a></a></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer></footer>   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/progresbar.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
