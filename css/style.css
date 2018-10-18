@@ -6,6 +6,14 @@
     src: url('../fonts/Lato-Thin.ttf');
     font-family: 'Lato Thin';
 }
+@font-face{
+    src: url('../fonts/Lato-Heavy.ttf');
+    font-family: 'Lato Heavy';
+}
+@font-face{
+    src: url('../fonts/Lato-Light.ttf');
+    font-family: 'Lato Light';
+}
 body, html{
     padding: 0;
     margin: 0;
@@ -222,7 +230,8 @@ section.packages{
     border-bottom: 1px dashed #b4b4b4;
     z-index: 0;
 }
-.packages:before{
+.packages:before,
+.packages:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -232,6 +241,7 @@ section.packages{
     z-index: -1;
     background-color: #fff;
 }
+
 .package-item{
     background-color: #fff;
     text-align: center;
@@ -256,7 +266,7 @@ section.packages{
 }
 
 .package-item .slider .fa-anchor,
-.basic-package .description span:last-child,{
+.basic-package .description span:last-child{
     color:#fcb03c;
 }
 
@@ -306,12 +316,15 @@ section.packages{
 }
 .package-item .price{
     font-size: 28px;
+    font-weight: bold;
 }
 .package-item .price sup{
     font-size:16px;
+    font-family: 'Lato Heavy', sans-serif;
 }
 .package-item .price sub{
     font-size:13px;
+    font-weight: normal;
 }
 
 .about-us .about-text{
@@ -345,6 +358,7 @@ section.packages{
 .about-us .about-team .team-item .status{
     font-size:15px;
     color: #8e8e8e;
+    margin: 5px 0px;
 }
 .about-us .about-team .avatar{
     height: 115px;
@@ -366,4 +380,57 @@ section.packages{
     background-image: url('../img/team/team-member-3.jpg');
     background-position: center;
     background-size: cover;
+}
+.about-us .about-team .team-item .social{
+    padding: 0 15px;
+}
+.about-us .about-team .team-item .social a{
+    color:#bfbfbf;
+}
+.about-us .about-team .team-item .social a:hover{
+    color: #1f89ba;
+}
+
+.testimonials{
+    background-image: url('../img/testimonbg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0px;
+    color: #fff;
+}
+.testimonials .testimonial-container{
+    margin-bottom: 20px;
+}
+.testimonials .testimonial p{
+    text-align: center;
+    font-size:20px;
+    font-family: 'Lato Light', sans-serif;
+
+}
+.testimonials .author{
+    font-weight: bold;
+    display: none;
+    font-size:20px;
+}
+.testimonials .author.active{
+    display: block;
+}
+.carousel .carousel-indicators,
+.carousel .carousel-caption{
+    position: relative;
+    right: initial;
+    left: initial;
+    bottom:initial;
+    margin: 0;
+}
+.carousel-indicators li{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.testimonials .divider{
+    margin: 0 5px;
+    font-family: 'Lato Thin', sans-serif;
 }

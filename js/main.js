@@ -8,15 +8,21 @@
         })
     }
 
-    let basic = createCircle('basic-package', '#FCB03C');
+    let basic = createCircle('basic-package', '#fcb03c');
     basic.animate(0.25);
 
-    let normal = createCircle('normal-package', '#7F8C8D');
+    let normal = createCircle('normal-package', '#7f8c8d');
     normal.animate(0.5);
 
-    let big = createCircle('big-package', '#F85F40');
+    let big = createCircle('big-package', '#f85f40');
     big.animate(0.75);
 
-    let biggest = createCircle('biggest-package', '#21BE9F');
+    let biggest = createCircle('biggest-package', '#21be9f');
     biggest.animate(1);
+
+    $("#comment-carousel").on("slide.bs.carousel", (e) => {
+        const authId = e.relatedTarget.dataset.author;
+        $(".author.active").removeClass("active");
+        $("#author-" + authId).toggleClass("active");
+    })
 })()
