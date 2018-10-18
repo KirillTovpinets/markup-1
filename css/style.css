@@ -304,7 +304,18 @@ section.packages{
 .biggest-package .price-section .divider{
     border-color:#21be9f;
 }
-
+.functions .fast-servers .icon{
+    background: #fcb03c;
+}
+.functions .cloud-servers .icon{
+    background: #0faff1;
+}
+.functions .domain-transfer .icon{
+    background: #95a5a6;
+}
+.functions .live-support .icon{
+    background: #f1540f;
+}
 .package-item button{
     background: none;
     border: none;
@@ -433,4 +444,90 @@ section.packages{
 .testimonials .divider{
     margin: 0 5px;
     font-family: 'Lato Thin', sans-serif;
+}
+
+.functions .icon{
+    width: 60px;
+    height: 60px;
+    color:#fff;
+    position: relative;
+    border-radius:50%;
+    margin-bottom: 23px;
+}
+.functions .icon .fa{
+    position: absolute;
+    top: 29%;
+    left: 28%;
+    font-size:28px;
+}
+.functions .icon .fa-flash{
+    left:40%;
+}
+.functions .icon .fa-cloud{
+    left: 26%;
+}
+.functions .function-item{
+    text-align: center;
+}
+.function-item .title{
+    font-size:18px;
+    font-family: 'Lato Heavy', sans-serif;
+}
+.function-item .description{
+    font-size:16px;
+    font-family: 'Lato Light', sans-serif;
+    color:#7e7e7e;
+}
+
+footer{
+    background: #2a2a2a;
+    padding: 20px 0px;
+}
+
+.navbar-footer a{
+    text-transform: uppercase;
+    font-size:13px;
+    color:#686868;
+    padding: 10px 0px;
+}
+.navbar-footer a:hover{
+    color:#fff;
+    border-bottom:none;
+}
+.navbar-footer + hr{
+    background-color:#686868;
+    margin-bottom: 34px;
+}
+footer .footer-block{
+    border-right:1px solid #686868;
+    padding: 20px 56px 0px 56px;
+    color:#686868;
+    font-size:15px;
+    font-family: 'Lato Light', sans-serif;
+}
+footer .footer-block:first-child{
+    padding-right: 56px;
+    padding-left: 0px;
+}
+footer .footer-block:last-child{
+    border:none;
+    padding-right: 0;
+    padding-left: 56px;
+}
+footer .row{
+    margin: 0;
+}
+footer .links ul{
+    list-style-type: none;
+    padding: 0;
+}
+.links li a{
+    color:#686868;
+}
+.links li a:hover{
+    text-decoration: none;
+    color:#fff; 
+}
+.links li a .fa{
+    margin-right: 5px;
 }
