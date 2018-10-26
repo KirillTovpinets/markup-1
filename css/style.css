@@ -25,6 +25,7 @@ a{
 }
 a:hover{
     color:#fff;
+    text-decoration: none;
 }
 .content-block,
 .tab-pane{
@@ -100,43 +101,48 @@ a:hover{
     color:#fff;
     text-align: center;
 }
-
-.nav-tabs .nav-item{
-    margin: 0;
-    border:none;
-    position: relative;
+.button-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-.nav-tabs .nav-link{
+.header-btn{
     background-color: #21424a;
     border:none;
-    padding: 65px 0px;
+    width: 50%;
+    padding:65px 0px;
+    text-align: center;
     font-size:22px;
     font-weight:bold;
     border-radius: 0px;
     text-transform: uppercase;
 }
-.nav-item svg{
+.login-container{
+    position: relative;
+}
+.login-btn svg{
     position: absolute;
     top: 0;
     right: -30px;
     z-index: 1;
 }
-.nav-item svg.triangle-on{
+.login-btn svg.triangle-on{
     display:none;
 }
-.nav-tabs .nav-link:hover ~ svg.triangle-on,
-.nav-tabs .nav-link:active ~ svg.triangle-on,
-.nav-tabs .nav-link:focus ~ svg.triangle-on{
+.header-btn:hover svg.triangle-on,
+.header-btn:active svg.triangle-on,
+.header-btn:focus svg.triangle-on{
     display: block;
 }
-.nav-tabs .nav-link:hover ~ svg.triangle-off,
-.nav-tabs .nav-link:active ~ svg.triangle-off,
-.nav-tabs .nav-link:focus ~ svg.triangle-off{
+.header-btn:hover svg.triangle-off,
+.header-btn:active svg.triangle-off,
+.header-btn:focus svg.triangle-off{
     display:none;
 }
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:active,
-.nav-tabs .nav-link:focus{
+.header-btn:hover,
+.header-btn:active,
+.header-btn:focus{
     background-color: #2fac6c;
     border-radius: 0px;
     color:#fff;
